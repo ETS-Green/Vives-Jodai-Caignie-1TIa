@@ -11,7 +11,7 @@ h1 {
     background-color: red;
 }
 
-a {
+a:link {
     background-image: url('../img/hyperlink.png');
     background-position: left center;
     background-repeat: no-repeat;
