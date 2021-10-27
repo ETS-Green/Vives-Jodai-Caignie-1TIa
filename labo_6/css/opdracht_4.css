@@ -1,0 +1,30 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+
+    background-color: silver;
+    color: darkblue;
+}
+
+h1 {
+    font-variant: small-caps;
+    background-color: red;
+}
+
+a {
+    background-image: url('../img/hyperlink.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.stippeltjesrand {
+    border-style: dotted;
+    border-width: 1px;
+}
