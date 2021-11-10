@@ -1,0 +1,57 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 2.5em;
+    color: white;
+}
+
+nav {
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
+    color: black;
+}
+
+nav a {
+    font-weight: bold;
+    color: rgb(63, 184, 109);
+    text-decoration-line: none;
+}
+
+article {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(225, 225, 225);
+}
+
+article h1 {
+    font-size: 2em;
+    text-decoration-line: underline;
+    margin: 0;
+    margin-top: 10px;
+    padding: 25px 0;
+    color: rgb(75, 75, 75);
+
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+#banner {
+    height: 100px;
+    width: 100%;
+    background-image: url(../img/header.jpg);
+}

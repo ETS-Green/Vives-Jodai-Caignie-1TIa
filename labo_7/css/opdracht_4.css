@@ -1,0 +1,44 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+table thead tr th {
+    padding: 10px;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgb(35,37,70);
+    color: rgb(200,190,240);
+}
+
+table thead tr #month {
+    padding: 0;
+}
+
+table thead tr th h1 {
+    margin: 0;
+    background-color: rgb(170,170,200);
+    color: black;
+}
+
+table tbody tr td {
+    padding: 5px 10px;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+}
+
+table tbody tr td:first-child,td:last-child {
+    background-color: rgb(255, 220, 220);
+}
+
+table tbody tr td.notThisMonth {
+    background-color: gray;
+}
+
+#freeDay {
+    background-color: rgb(250, 120, 120);
+}

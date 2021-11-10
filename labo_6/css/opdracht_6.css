@@ -1,7 +1,7 @@
-.checklist {
-    list-style-image: url('../img/checkbox_unchecked.png');
+.checklist li::before {
+    content: "\2610";
 }
 
-.checked {
-    list-style-image: url('../img/checkbox_checked.png');
+li.checked::before {
+    content: "\2611";
 }
