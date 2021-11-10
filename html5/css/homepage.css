@@ -1,12 +1,23 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(150, 150, 150);
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     margin: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 10px;
+    background-color: darkgreen;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 50vw;
 }
 
 .row {
@@ -25,13 +36,22 @@ h1 {
     padding: 1%;
     height: 100%;
     min-width: 20%;
-    width: auto;
+    width: 100%;
     background-color: rgb(200, 200, 200);
+    text-align: center;
+}
+
+.col table {
+    margin: 0 auto;
 }
 
 
 /*CLEARFIX*/
-footer::before, footer::after {
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::before, .clearfix::after {
     content: "";
     clear: both;
     display: table;

@@ -1,6 +1,7 @@
 .datagrid table { 
     border-collapse: collapse;
-    text-align: left; width: 100%;
+    text-align: left;
+    width: 100%;
 }
 
 .datagrid {
@@ -11,6 +12,8 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 .datagrid table td, .datagrid table th {
