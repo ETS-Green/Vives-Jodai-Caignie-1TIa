@@ -7,21 +7,15 @@ body {
 }
 
 h1 {
-    margin: 0;
     padding: 0;
     font-size: 150%;
     color: #007e7e;
 }
 
 h2 {
-    margin: 0;
     padding: 0;
     font-size: 130%;
     color: #007e7e;
-}
-
-p {
-    margin: 0;
 }
 
 footer {
@@ -30,7 +24,12 @@ footer {
     text-align: center;
 }
 
+:any-link {
+    color: currentColor;
+}
 
+
+/*-----classes-----*/
 
 .wrapper {
     margin: 0 auto;
@@ -61,7 +60,9 @@ footer {
 }
 
 .specials {
-    padding: 10px;
+    padding: 20px;
+    background-image: url("../img/cocktail.gif");
+    background-repeat: repeat-x;
     border: 2px solid #007e7e;
     text-align: center;
 }
@@ -75,18 +76,41 @@ footer {
 }
 
 .specials a:hover {
-    padding: 2px;
     background-color: rgb(134, 66, 54);
 }
 
-#banner {
-    margin: auto;
+.cursive {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 
+/*-----IDs-----*/
+
+#banner {
+    text-align: center;
+}
+
+#guarantee {
+    font-style: italic;
+    line-height: 150%;
+    margin: 30px;
+    padding: 20px 20px 20px 80px;
+    background-image: url("../img/background.gif");
+    background-repeat: no-repeat;
+    border: 2px dashed white;
+    background-color: #a7cece;
+    color: #444444;
+}
+
+
+/*-----clearfix-----*/
 
 .row::before, .row::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
