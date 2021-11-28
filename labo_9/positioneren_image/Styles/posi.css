@@ -1,0 +1,29 @@
+body {
+    font-size: 1.25em;
+}
+
+article {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+article h2 {
+    margin: 0;
+}
+
+article:nth-child(odd) p img {
+    margin-right: 10px;
+    float: left;
+}
+
+article:nth-child(even) p img {
+    margin-left: 10px;
+    float: right;
+}
+
+article::before, article::after {
+    content: "";
+    clear: both;
+    display: table;
+}
