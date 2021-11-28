@@ -3,44 +3,39 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("fotos/pagebackground.png");
+    background-repeat: repeat-y;
+    background-size: 1030px;
+    background-position: 50%;
 }
 
-header {
-    position: relative;
-    height: 200px;
-    background-image: url("fotos/bgsky3.jpg");
+aside {
+    float: right;
+    max-width: 250px;
+    border: 1px solid #999999;
+    background-color: #dddddd;
+    line-height: 100%;
+}
+
+aside h3 {
+    background-color: blue;
+    color: white;
+    font-size: 120%;
     text-align: center;
-    color: darkblue;
 }
 
-header p:nth-child(1) {
-    margin-top: 0;
-    font-size: 300%;
-    font-weight: bold;
-    font-style: italic;
+aside p {
+    margin: 10px;
+    color: #666666;
+    font-size: 90%;
 }
 
-header p:nth-child(2) {
-    font-size: 240%;
-    font-weight: bold;
-}
-
-header img {
-    position: absolute;
-    right: 90px;
-    bottom: 60px;
+footer {
+    text-align: center;
 }
 
 /*---CLASSES---*/
 .wrapper {
-    margin: auto;
-    width: 1030px;
-    background-image: url("fotos/pagebackground.png");
-    background-repeat: repeat-y;
-    background-size: contain;
-}
-
-.wrapper div {
     margin: auto;
     width: 960px;
 }
@@ -50,6 +45,7 @@ header img {
     margin: 0;
     padding: 0;
     width:100%;
+    line-height: 0;
 }
 
 .col {
@@ -57,31 +53,102 @@ header img {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 700px;
+    line-height: 100%;
+}
+
+.col section:nth-child(1) header {
+    float: left;
+    margin: 20px 20px 0;
+    width: 100px;
+}
+
+.col section:nth-child(1) article p {
+    float: left;
+    margin: 0;
+    padding: 20px 30px 20px 0px;
+    box-sizing: border-box;
+    width: 560px;
+    background-color: white;
+    color: black;
+    font-size: 90%;
+    text-align: justify;
+}
+
+.col section:nth-child(1) article span {
+    display: inline;
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.col section:nth-child(2) {
+    padding: 10px;
+    background-color: #999999;
+}
+
+.col section:nth-child(2) img {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: content-box;
+    width: 180px;
+    height: 180px;
+    border: 1px dashed #999999;
+    background-color: white;
 }
 
 /*---IDs---*/
-#news {
-    float: right;
-    max-width: 250px;
-    border: 1px solid #999999;
-    background-color: #dddddd;
-}
-
-#news h3 {
-    background-color: blue;
-    color: white;
-    font-size: 120%;
+#banner {
+    position: relative;
+    height: 200px;
+    background-image: url("fotos/bgsky3.jpg");
     text-align: center;
+    color: darkblue;
+    line-height: 100%;
 }
 
-#news p {
-    margin: 10px;
-    color: #666666;
-    font-size: 90%;
+#banner p:nth-child(1) {
+    margin-top: 0;
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#banner p:nth-child(2) {
+    font-size: 240%;
+    font-weight: bold;
+}
+
+#banner img {
+    position: absolute;
+    right: 90px;
+    bottom: 60px;
+}
+
+#bottom {
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+}
+
+#bottom section {
+    display: inline-block;
+    margin-left: 120px;
+}
+
+#bottom a:hover {
+    color: red;
 }
 
 /*---CLEARFIX---*/
 .row::before, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section::before, section::after {
     content: "";
     clear: both;
     display: table;
