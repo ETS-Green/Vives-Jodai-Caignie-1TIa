@@ -45,25 +45,23 @@ footer {
     margin: 0;
     padding: 0;
     width:100%;
-    line-height: 0;
 }
 
 .col {
-    display: inline-block;
+    float: left;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 700px;
-    line-height: 100%;
 }
 
-.col section:nth-child(1) header {
+.introduction header {
     float: left;
     margin: 20px 20px 0;
     width: 100px;
 }
 
-.col section:nth-child(1) article p {
+.introduction article p {
     float: left;
     margin: 0;
     padding: 20px 30px 20px 0px;
@@ -75,19 +73,19 @@ footer {
     text-align: justify;
 }
 
-.col section:nth-child(1) article span {
+.introduction article span {
     display: inline;
     color: blue;
     font-style: italic;
     font-weight: bold;
 }
 
-.col section:nth-child(2) {
+.gallery {
     padding: 10px;
     background-color: #999999;
 }
 
-.col section:nth-child(2) img {
+.gallery img {
     float: left;
     margin: 10px;
     padding: 10px;
@@ -105,7 +103,6 @@ footer {
     background-image: url("fotos/bgsky3.jpg");
     text-align: center;
     color: darkblue;
-    line-height: 100%;
 }
 
 #banner p:nth-child(1) {
