@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(70, 92, 53);
+}
+
+footer {
+    text-align: center;
+}
+
+.row-style {
+    padding: 25px;
+    background-color: rgb(90, 116, 69);
+}
+
+.row-style::before, .row-style::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#prognosis {
+    border-radius: 25px;
+    background-color: rgb(144, 177, 116);
+    margin: auto;
+    padding: 10px;
+}
+
+#prognosis th {
+    padding: 5px;
+}

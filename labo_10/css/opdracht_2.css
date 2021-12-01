@@ -1,2 +1,7 @@
+.col-gray {
+    background-color: lightgray;
+}
 
-
+.col-darkgray {
+    background-color: gray;
+}
