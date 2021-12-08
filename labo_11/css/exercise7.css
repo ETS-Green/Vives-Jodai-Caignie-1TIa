@@ -1,5 +1,11 @@
 /* items */
 
+section {
+    display: grid;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
 section div {
     color: white;
     font-size: 20px;
@@ -38,4 +44,39 @@ section div {
     background: #4464a1;
 }
 
+@media only screen and (min-width: 760px) {
+    section {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
 
+@media only screen and (max-width: 760px) {
+    .item-9 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .item-2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .item-4 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .item-5 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .item-7 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .item-8 {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    .item-3 {
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+}
