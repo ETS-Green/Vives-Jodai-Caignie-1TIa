@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    width: 600px;
+}
+
+h1 {
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: black;
+}
+
+h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+/*classes*/
+
+.hRow {
+    border-bottom: 1px solid #ebe8e8;
+}
+
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*size dependent*/
+@media (min-width: 770px) {
+    header {
+        width: 750px;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        width: 980px;
+    }
+}

@@ -1,0 +1,63 @@
+.grid {
+    display: grid;
+    grid-template-areas: 
+        'gh'
+        'gn'
+        'gm'
+        'ga'
+        'gf';
+}
+
+.gridHeader {
+    grid-area: gh;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+.gridMain {
+    grid-area: gm;
+    text-align: center;
+    padding: 20px;
+    background-color: lightyellow;
+}
+
+.gridNav {
+    grid-area: gn;
+    text-align: center;
+    padding: 20px;
+    background-color: purple;
+}
+
+.gridAside {
+    grid-area: ga;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgreen;
+}
+
+.gridFooter {
+    grid-area: gf;
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+}
+
+.caption {
+    font-family: helvetica;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+@media only screen and (min-width: 786px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 14fr 2fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+        grid-template-areas: 
+            'gh gh gh gh gh'
+            '. gn gm ga .'
+            'gf gf gf gf gf';
+        min-height: 800px;
+    }
+}
