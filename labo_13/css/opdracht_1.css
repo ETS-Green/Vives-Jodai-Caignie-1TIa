@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    background-image: url("../img/headerokapi.jpg");
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    height: 180px;
+    text-align: center;
+}
+
+header image {
+    height: 90%;
+}
+
+footer {
+    border-top: 5px solid black;
+}
+
+/*-classes-*/
+
+.wrapper {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 970px;
+}
+
+.right img {
+    display: block;
+    clear: both;
+    float: right;
+    border: 1px solid black;
+    margin: 5px 10px;
+}
+
+/*CLEARFIX*/
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
