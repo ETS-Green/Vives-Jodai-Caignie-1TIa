@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+body {
+    background-image: url("../img/stripverloopokapi.jpg");
+    background-size: auto;
+    background-repeat: repeat-x;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 header {
     border-bottom: 1px solid black;
     box-sizing: border-box;
@@ -13,12 +20,50 @@ header {
     text-align: center;
 }
 
-header image {
-    height: 90%;
+nav {
+    display: block;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 20px 37px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+    line-height: 107%;
+}
+
+article h1 {
+    margin: 15px 0;
+    font-size: 1.15em;
+}
+
+article p {
+    font-size: 0.98em;
+}
+
+span {
+    display: block;
+    border: 1px solid black;
+    margin: 15px 5px 0 0;
+    padding: 10px;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bold;
 }
 
 footer {
     border-top: 5px solid black;
+    box-sizing: border-box;
+    background-color: #eee9dd;
+    padding: 10px 25px;
+    height: 73px;
+    width: 100%;
+    text-align: right;
 }
 
 /*-classes-*/
@@ -26,15 +71,46 @@ footer {
 .wrapper {
     border: 1px solid black;
     margin: 0 auto;
+    margin-bottom: 1px;
     width: 970px;
+}
+
+.main {
+    background-color: #eee9dd;
+}
+
+.left {
+    box-sizing: border-box;
+    float: left;
+    padding: 10px 0 0 10px;;
+    width: 598px;
+}
+
+.right {
+    box-sizing: border-box;
+    float: right;
+    padding: 0 10px;
+    width: 372px;
 }
 
 .right img {
     display: block;
-    clear: both;
-    float: right;
     border: 1px solid black;
-    margin: 5px 10px;
+    margin: 10px 0;
+}
+
+/*-IDs-*/
+
+#karen {
+    border: 1px solid black;
+    float: left;
+    margin: 15px 10px 25px 0;
+}
+
+#sydney {
+    border: 1px solid black;
+    float: left;
+    margin: 10px 10px 25px 0;
 }
 
 /*CLEARFIX*/
