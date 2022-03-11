@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta  content="width=device-width, initial-scale=1" name="viewport" />
+        <title>opdracht color picker</title>
+        <link rel="stylesheet" href="../css/opdracht_2.css"/>
+        <script src="../../../lib.js" async></script>
+        <script src="../js/opdracht_2.js" defer></script>
+    </head>
+    <body> 
+        <section>
+            <ul>
+                <li>
+                    <a>0</a>
+                    <input type="range" class="slider" id="sRed" value="0" min="0" max="255" />
+                    <a>255</a>
+                    <span>Red <b id="oRed">0</b></span>
+                </li>
+                <li>
+                    <a>0</a>
+                    <input type="range" class="slider" id="sGreen" value="0" min="0" max="255" />
+                    <a>255</a>
+                    <span>Green <b id="oGreen">0</b></span>
+                </li>
+                <li>
+                    <a>0</a>
+                    <input type="range" class="slider" id="sBlue" value="0" min="0" max="255" />
+                    <a>255</a>
+                    <span>Blue <b id="oBlue">0</b></span>
+                </li>
+            </ul>
+            <div id="preview"></div>
+        </section>
+    </body>
+</html>
