@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta  content="width=device-width, initial-scale=1" name="viewport" />
+        <title>opdracht invulformulier</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <label for="fName">First name*: </label>
+            <input type="text" id="fName" name="firstname" placeholder="Your first name" required="required" autofocus="autofocus"/>
+            <br>
+            <label for="lName">Last name*: </label>
+            <input type="text" id="lName" name="lastname" placeholder="Your last name" required="required"/>
+            <br>
+            <a>Which sport do you train?</a><br>
+            <label for="running">Running </label>
+            <input type="checkbox" id="running" name="running"/>
+            <br>
+            <label for="swimming">Swimming </label>
+            <input type="checkbox" id="swimming" name="rowing"/>
+            <br>
+            <label for="rowing">Rowing </label>
+            <input type="checkbox" id="rowing" name="rowing"/>
+            <br>
+            <label for="gender">What is your gender?</label><br>
+            <input type="radio" name="gender" value="M"/><a> Male</a><br>
+            <input type="radio" name="gender" value="F"/><a> Female</a>
+            <br>
+            <label for="movie">Favorite movie: </label>
+            <input type="text" id="movie" id="fav_movie"/>
+            <br>
+            <label for="quote">Favorite quote: </label>
+            <input type="text" id="quote" name="fav_quote" placeholder="Write your favorite quote" size="22"/>
+            <br>
+            <label for="pswd">Password*: </label>
+            <input type="password" name="password" id="pswd" required="required"/>
+            <br>
+            <label for="food">Favorite food: </label>
+            <select id="food" name="fav_food">
+                <option value="hamburger">Hamburger</option>
+                <option value="pancakes">Pancakes</option>
+                <option value="humanSuffering">Tears of your enemies</option>
+            </select>
+            <br>
+            <label for="email">Email adress: </label>
+            <input type="email" id="email" name="email_adress" placeholder="Enter your email adress" size="25"/>
+            <br>
+            <label for="site">Favorite site: </label>
+            <input type="url" id="site" name="fav_site" placeholder="Enter the URL of your favoite site" size="30"/>
+            <br>
+            <label for="sNum">Favorite number between 1 - 10: </label>
+            <input type="number" id="sNum" name="number_small" min="1" max="10"/>
+            <br>
+            <label for="lNum">Favorite number between 11 - 1000: </label>
+            <input type="range" id="lNum" name="number_large" min="11" max="1000"/>
+            <br>
+            <label for="bday">When were you born? </label>
+            <input type="date" id="bday" name="birthday"/>
+            <br>
+            <label for="zCode">Belgium zip-code reg number*: </label>
+            <input type="text" id="zCode" name="zip-code" placeholder="9999" pattern="[0-9]{4}" required="required"/>
+            <br>
+            <label for="search">Search for something: </label>
+            <input type="search" id="search" name="search"/>
+            <br>
+            <label for="color">What is your favorite color? </label>
+            <input type="color" id="color" name="fav_color" value="#000000"/>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
