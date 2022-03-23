@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta  content="width=device-width, initial-scale=1" name="viewport" />
+        <title>opdracht formvalidatie</title>
+        <link rel="stylesheet" href="../css/opdracht_6.css"/>
+        <script src="../js/opdracht_6.js" defer></script>
+    </head>
+    <body>
+        <label for="name">voornaam</label>
+        <input type="text" id="name" name="voornaam"/>
+        <a id="errorName" class="errorField"></a>
+        <br>
+        <label for="famName">familienaam</label>
+        <input type="text" id="famName" name="familienaam"/>
+        <a id="errorFamName" class="errorField"></a>
+        <br>
+        <label for="date">geboortedatum</label>
+        <input type="text" id="date" name="geboortedatum"/>
+        <a id="errorDate" class="errorField"></a>
+        <br>
+        <label for="email">email</label>
+        <input type="text" id="email" name="email"/>
+        <a id="errorEmail" class="errorField"></a>
+        <br>
+        <label for="kids">aantal kinderen</label>
+        <input type="text" id="kids" name="aantal_kinderen"/>
+        <a id="errorKids" class="errorField"></a>
+        <br>
+        <input type="submit" id="validate" value="Valideer">
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta  content="width=device-width, initial-scale=1" name="viewport" />
+        <title>opdracht formwaarden</title>
+        <script src="../../../lib.js" async></script>
+        <script src="../js/opdracht_5.js" defer></script>
+    </head>
+    <body>
+        <label for="roker">Is roker</label>
+        <input type="checkbox" id="roker" name="is_roker"/>
+        <br>
+        <label for="taal">Moedertaal</label>
+        <input type="radio" name="moedertaal" value="nl"/><a> Nederlands </a>
+        <input type="radio" name="moedertaal" value="fr"/><a>Frans </a>
+        <input type="radio" name="moedertaal" value="en"/><a>Engels </a>
+        <br>
+        <label for="buurland">Favoriete buurland</label>
+        <select id="buurland" name="favoriete_buurland">
+            <option value="nederland">Nederland</option>
+            <option value="frankrijk">Frankrijk</option>
+            <option value="duitsland">Duitsland</option>
+        </select>
+        <br>
+        <label for="bestelling">Bestelling</label>
+        <select id="bestelling" name="bestelling" multiple>
+            <option value="aardappelen">aardappelen</option>
+            <option value="brood">brood</option>
+            <option value="melk">melk</option>
+            <option value="biefstuk">biefstuk</option>
+            <option value="chips">chips</option>
+            <option value="krant">krant</option>
+        </select>
+        <br>
+        <input type="submit" id="submit" value="Toon resultaat">
+    </body>
+</html>
