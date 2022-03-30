@@ -7,6 +7,10 @@ const appendNewP = () => {
 }
 
 const setup = () => {
+    let btn = document.createElement("button");
+    btn.style = "margin-bottom: 10px;";
+    btn.innerText = "Add P";
+    document.getElementsByTagName("body")[0].appendChild(btn);
     document.getElementsByTagName("button")[0].addEventListener("click", appendNewP);
 }
 
