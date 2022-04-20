@@ -4,9 +4,10 @@ let global = {
     IMAGE_PATH: "../img/opdracht_2/card",
     IMAGE_SUFFIX: ".png",
 
-    ROW_SIZE: 4,
-    COLUMN_SIZE: 3,
-    CARD_COUNT: 6,
+    CARD_COUNT: 15, //total nr of unique cards (max 15 due to image limit)
+    MATCH_COUNT: 3, //how many duplicates you need to find
+    rows: 0,
+    columns: 0,
 
     BOARD: [],
     SELECTED: [],
@@ -29,23 +30,43 @@ const shuffle = (array) => {
     return array;
 }
 
+const calculateBoardSize = () => {
+    let totalAmountOfCards = global.MATCH_COUNT * global.CARD_COUNT;
+    let i = Math.ceil(Math.sqrt(totalAmountOfCards));
+    while (!totalAmountOfCards%i) {
+        i--;
+    }
+    global.rows = totalAmountOfCards/i;
+    global.columns = i;
+}
+
 const setupBoard = () => {
-    for (let i = 0; i < (global.ROW_SIZE * global.COLUMN_SIZE); i++) {
+    calculateBoardSize();
+    for (let i = 0; i < (global.MATCH_COUNT * global.CARD_COUNT); i++) {
         global.BOARD.push(i%global.CARD_COUNT);
     }
     global.BOARD = shuffle(global.BOARD);
-    for (let i = 0; i < global.BOARD.length; i++) {
-        let card = document.createElement("img");
-
-        card.id = "pos" + i.toString();
-        card.src = "../img/opdracht_2/back.png";
-
-        card.classList.add("card");
-
-        card.addEventListener("click", selectCard);
-
-        document.getElementById(`row${i%global.COLUMN_SIZE + 1}`).appendChild(card);
+    for (let r = 0; r < global.rows; r++) {
+        let newRow = document.createElement("div");
+        newRow.classList.add("row");
+        for (let c = 0; c < global.columns; c++) {
+            newRow.appendChild(createCard(c + (r * global.columns)));
+        }
+        document.getElementById("board").appendChild(newRow);
     }
+}
+
+const createCard = (idx) => {
+    let card = document.createElement("img");
+
+    card.id = "pos" + idx.toString();
+    card.src = "../img/opdracht_2/back.png";
+
+    card.classList.add("card");
+
+    card.addEventListener("click", selectCard);
+
+    return card;
 }
 
 const selectCard = (e) => {
@@ -67,7 +88,7 @@ const selectCard = (e) => {
             console.log(cardID);
             console.log(global.BOARD[cardID]);
         }
-        if (global.SELECTED.length === (global.ROW_SIZE*global.COLUMN_SIZE)/global.CARD_COUNT) {
+        if (global.SELECTED.length === global.MATCH_COUNT) {
             compareCards();
         }
     }
