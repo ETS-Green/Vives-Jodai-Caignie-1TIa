@@ -5,7 +5,7 @@ let global = {
     IMAGE_SUFFIX: ".png",
 
     CARD_COUNT: 15, //total nr of unique cards (max 15 due to image limit)
-    MATCH_COUNT: 3, //how many duplicates you need to find
+    MATCH_COUNT: 2, //how many duplicates you need to find
     rows: 0,
     columns: 0,
 
@@ -63,6 +63,7 @@ const createCard = (idx) => {
     card.src = "../img/opdracht_2/back.png";
 
     card.classList.add("card");
+    card.style.width = `${Math.min(200, document.documentElement.clientWidth/(global.columns * 1.5))}px`;
 
     card.addEventListener("click", selectCard);
 
