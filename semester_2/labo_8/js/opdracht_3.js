@@ -88,8 +88,8 @@ const sortList = () => {
 
     optionArray.sort((a, b) => {
         if (a.innerText > b.innerText) return 1;
-        else if (a.innerText < b.innerText) return -1;
-        else return 0;
+        if (a.innerText < b.innerText) return -1;
+        return 0;
     });
 
     list.innerHTML = "";
